@@ -1,0 +1,39 @@
+<head>
+    <%- include('../partinals/head');%>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container__invoice">
+            <div class="card">
+                <div class="card__header">
+                    <div class="card__header--button">
+                        <button class="button__menu">
+                            <span class="ti-plus"></span>
+                            productos
+                        </button>
+                        <button>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card__body">
+                    <div class="flex__horizontal">
+                        <%- include('../components/formClient'); %>
+                        
+                        <%- include('../components/dataTime'); %>                        
+                    </div>
+                    
+                    <%- include('../components/tableProduct'); %>
+                
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+
+
+</body>

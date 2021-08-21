@@ -1,0 +1,55 @@
+<style>
+    .data__time{
+        border: .5px solid #d8d8d8;
+        background-color: #d8d8d8;
+        margin: 0;
+    }
+
+    .c_label{
+        background-color: #d8d8d8;
+        width: 100px;
+        padding: .5rem;
+        font-weight: bold;
+    }
+
+    .input_date--time{
+        background-color: #fff;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid rgb(186, 180, 180);
+        color: black;
+        font-size: 10px;
+        padding: 10px 15px;
+        width: 70%;
+        outline: none;
+    }
+
+</style>
+
+<div class="data__time">
+    <div class="form__group">
+        <div class="c_label">
+            <p>Generacion:</p>
+        </div>
+        <input type="datetime-local" class="input_date--time">
+    </div>
+    <div class="form__group">
+        <div class="c_label">
+            <p>Expedición:</p>
+        </div>
+        <input type="datetime-local" class="input_date--time">
+    </div>
+    <div class="form__group">
+        <div class="c_label">
+            <p>Vencimiento:</p>
+        </div>
+        <input type="datetime-local" class="input_date--time">
+    </div>
+</div>
+
+<script>
+    var today = new Date()
+
+    console.log(today.toJSON())
+</script>

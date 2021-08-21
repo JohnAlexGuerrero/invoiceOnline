@@ -1,0 +1,68 @@
+  
+<style>
+    .form__client{
+        border: .5px solid #d8d8d8;
+        background-color: #d8d8d8;
+        margin: 0;
+        width: 500px;
+    }
+
+    .form__client_group{
+        display: flex;
+        justify-content: right;
+        padding-left: .6rem
+    }
+
+    .form__label{
+        background-color: #d8d8d8;
+        width: 100px;
+        padding: .5rem;
+        font-weight: bold;
+    }
+
+    .form__client_group input{
+        background-color: #fff;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid rgb(186, 180, 180);
+        color: black;
+        font-size: 14px;
+        padding: 10px 15px;
+        width: 80%;
+        outline: none;
+        text-align: left;
+    }
+
+</style>
+
+<div class="container">
+    <div class="form__client">
+        <div class="form__client_group">
+          <div class="form__label">
+            <p>Señores:</p>
+          </div>
+          <input type="text" id="idname" onkeyup="changeWordToUppercase(this.id)">
+        </div>
+        <div style="display: flex; align-items: center;">
+          <div class="form__client_group">
+            <div class="form__label">
+              <p>NIT:</p>
+            </div>
+            <input type="text" id="idnit" onkeyup="changeWordToUppercase(this.id)">
+          </div>
+          <div class="form__client_group">
+            <div class="form__label">
+              <p>Telefono:</p>
+            </div>
+            <input type="text" id="idphone" onkeyup="changeWordToUppercase(this.id)">
+          </div>
+        </div>
+        <div class="form__client_group">
+          <div class="form__label">
+            <p>Direccion:</p>
+          </div>
+          <input type="text" id="idaddress" onkeyup="changeWordToUppercase(this.id)">
+        </div>
+      </div>
+</div>
